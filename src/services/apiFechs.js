@@ -1,4 +1,4 @@
-import  apiRoutes from "./apiRoutes";
+import  apiRoutes from "./apiUrl.js"
 
 export async function fetchTag() {
     const res = await fetch(apiRoutes.Etiquetas); // Cambia la URL a tu API
@@ -9,6 +9,7 @@ export async function fetchTag() {
   export async function fetchLink() {
     const res = await fetch(apiRoutes.TODOS); // Cambia la URL a tu API
     const links = await res.json();
+    console.log('jose' ,links)
     return links;
   }
   
