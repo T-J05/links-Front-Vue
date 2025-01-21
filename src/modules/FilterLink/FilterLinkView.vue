@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Detalle del ítem</h1>
+    <h1>Enlaces Filtrados</h1>
     <p>ID del ítem: {{ id }}</p>
     <!-- Mostrar enlaces si se cargan -->
     <div v-if="enlaces.length">

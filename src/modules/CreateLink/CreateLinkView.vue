@@ -21,7 +21,7 @@
 
       <!-- Campo de selección -->
       <div>
-        <label for="opcion">Opción:</label>
+        <label for="opcion">Etiqueta:</label>
           <select id="opcion" v-model="formulario.etiquetas.nombre">
             <option v-for="etiqueta in etiquetas.etiquetas" :key="etiqueta.id" :value="etiqueta.nombre">
               {{ etiqueta.nombre }}
@@ -97,6 +97,12 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1em;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+  
 }
 label {
   font-weight: bold;
